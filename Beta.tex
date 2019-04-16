@@ -1,0 +1,388 @@
+\documentclass[11pt,a5paper]{book}
+
+%%%Font related packages
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Ligatures=TeX} 
+%\setmainfont{Linux Libertine O}
+\newfontfamily\s[Scale=0.92, Script=Devanagari]{Shobhika-Regular}
+\usepackage{color, dtk-logos}
+ 
+ 
+ %%%Formatting related packages
+\usepackage{graphicx}
+\usepackage[hang,flushmargin]{footmisc} % For no indentation of footnotes.
+\usepackage{array}
+\usepackage{tabularx, multicol, vwcol}
+\usepackage{fullpage}
+\usepackage{marginnote}
+\usepackage{bm} %making accents thicker
+
+%Math related packages
+\usepackage{amsmath} % āmerican Mathematical Society packages for metamathematical symbols.
+%āpril 2017 āditya says install libertine math font package specially from website.
+
+%Page formatting commands
+
+%\newdimen\stdbaseline
+%\stdbaseline = 13pt 
+%\baselineskip = 2\baselineskip
+\parskip = \baselineskip
+\parindent = 0pt
+
+
+%%%Critical editing packages
+\usepackage[series={A,B,C,D},noend,noeledsec,nofamiliar,noledgroup]{reledmac}
+\Xarrangement[B]{twocol}
+\Xarrangement[C]{threecol}
+\Xarrangement[D]{paragraph}
+
+
+
+%% MāCROS for Diacriticals, symbols, math and text features
+
+\def\elp{$\ldots\,$}
+\def\degrees{$^\circ$}
+\def\degree{$^\circ$}
+\def\signs{$^s$}
+\def\Sin{\mathop{\rm Sin}\nolimits}
+\def\Cos{\mathop{\rm Cos}\nolimits}
+\def\Versin{\mathop{\rm Vers}\nolimits}
+\def\Coversin{\mathop{\rm Coversin}\nolimits}
+\def\Crd{\mathop{\rm Crd}\nolimits}
+\def\crd{\rm{crd}}
+\newcommand\myatop[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% MāCROS for Sanskrit Names
+
+\def\Ganesa{Ga\-\*ne\-\'sa}
+\def\Bhaskara{Bh\=a\-ska\-ra}
+%
+\def\KKT{\textit{Kara\-\*na\-kut\=u\-hala\-\*t\={\i}\-k\=a}}
+\def\KKe{\textit{Kara\-\*na\-ke\-\'sari}}
+\def\KheSi{\textit{Khe\-cara\-siddhi}}
+\def\JCU{\textit{Jy\=a\-c\=a\-potpa\-tti}}
+\def\PhCC{\textit{Phira\.ngi\-candra\-cchedyayopa\-yogika}}
+\def\Mahadevi{\textit{Mah\=a\-dev\={\i}}}
+\def\RG{\textit{Rekh\=a\-ga\*ni\-ta}}
+\def\Lil{\textit{L\={\i}l\=a\-va\-t\={\i}}}
+%
+\def\kalpa{\textit{ka\-lpa}}
+\def\kala{\textit{ka\-l\=a}}
+\def\kalas{\textit{ka\-l\=as}}
+\def\ghatika{\textit{gha\*tik\=a}}
+\def\jyotisa{\textit{jyo\-ti\-\*sa}}
+\def\pratikalas{\textit{prati\-ka\-l\=as}}
+\def\prativikalas{\textit{prati\-vi\-ka\-l\=as}}
+\def\bijaganita{\textit{b\={\i}ja\-ga\*ni\-ta}}
+\def\ya{\textit{y\=a}}
+\def\yava{\textit{y\=ava}}
+\def\yagha{\textit{y\=agha}}
+\def\yavava{\textit{y\=avava}}
+\def\rasi{\textit{rāśi}}
+\def\ru{\textit{r\=upa}}
+\def\vikala{\textit{vi\-ka\-l\=a}}
+\def\vikalas{\textit{vi\-ka\-l\=as}}
+%
+\def\zij{\textit{z\={\i}j}}
+\def\yavaniya{\textit{y\=avan\=iya}}
+\def\bijaganita{\textit{b\=ijaga\*nita}}
+%
+\def\opcit{\textit{op.\ cit.}}
+\def\loccit{\textit{loc.\ cit.}}
+\def\elp{$\ldots$}
+\def\danda{$|$}
+\def\nl{\hfill\break}
+%
+\def\sri{\textit{\'sr\={\i}}}
+%
+
+% \newcommand{\JOne}[1]{\colchunk{{#1}}}
+% \newcommand{\JTwo}[1]{\colchunk{{#1}%
+%    }\colplacechunks}
+
+%=============================================================%
+
+
+
+\begin{document}
+
+{\s  
+श्रीगणेशाय नमः || \marginnote{f. 1r $J_2$}
+अथैकांशजीवाविषये
+उलुग्वेगीजीकस्य \\
+शरहविर्जन्दीस्य\footnote{{\s @विर्जंदीस्थ }${\rm J_1}$}
+व्याख्या लिख्यते ||
+तत्रैकांशजी\-वान\-यनेन व्यतरं \\प्रकारद्वयमस्ति ||
+एकं यमशैदकाशीसंज्ञेन कृतम् ||
+द्वितीयं मिर्योलुग्वेगेन कृतम् ||
+परंचोलुग्वेगस्य यमसैदकाशीवेधप्रक्रियायां
+सा हाथकार्यस्ति \footnote{{\s साहाय्यकार्यस्ति}${\rm SB_J}$}|
+तत्र प्रथमप्रकारः कथ्यते| सं यथा ||
+अवजदं षडंश ६ चापं कल्पितम् ||
+पुनरस्य समानं भागत्रयं बचिह्नजचिह्नयोः कृतं
+तत्र अबमजमहं वजं बदं जदं चैताः पूर्णज्यारेखाः
+योज्याः ||
+अथात्रपूर्वोक्तप्रकारेणांशत्रयस्य\footnote{{\s अथात्रपूर्वाक्त@}${\rm J_1}$}
+जीवा ज्ञातास्ति सा चेयं ३| ८| २४| ३३| ५९| ३४| २८| ५४| ५०
+इयं द्विगुणा ६| १६| ४९| ७| ५९| ८| ५६| २९| ४० जाता मदपूर्णज्या \footnote{{\s @पर्णज्या}${\rm SB_J}$}||
+
+अत्रांशद्वयस्याबपूर्णज्या ज्ञातमिष्टमस्ति ||
+तत्र मिजिस्तीग्रन्थस्य \\
+प्रथमाध्यायस्थद्वितीयक्षेत्र
+इदमुपपन्नम् \footnote{{\s @द्वितीयक्षेत्रयिदमुप@ }${\rm J_1}$}||
+यच्चतुर्भुजवृत्तान्तः पतति \\
+तत्सन्मुखस्थभुजानां\footnote{{\s तत्संन्मुख@ } ${\rm J_1}$}
+घातयोगस्तच्चतुर्भुजान्तः पतितकर्णद्वयघातसमो भवति ||
+पुनस्तत्रैव प्रथमाध्यायस्य
+चतुर्थक्षेत्र इदमुपपन्नम् \footnote{{\s चतुर्थक्षेत्रे इदमुप@ }${\rm J_1}$}|| \\
+इष्टचापार्धपूर्णज्यावर्गस्तेनाङ्केनसमो \footnote{{\s @बर्ग@}${\rm SB_J}$} भवति ||
+यो कः %\\(|\\)
+ तच्चापोनभार्धांशानं या पूर्णज्या भवत्यस्या \footnote{{\s भवति । अस्याः}${\rm SB_J}$}
+व्यासेन यदन्तरं तेन गुणित यो
+व्यासार्धस्तदङ्कतुल्यो\footnote{{\s व्यासार्धः स्तदंक@ }${\rm J_1}$}
+भवति ||}
+
+
+\newpage
+
+Homage to Lord \Ganesa. \marginnote{f. 1r $J_2$} Now, with regard to the Sine of one degree, the commentary
+\textit{\'Sarahavirja\*md\={\i}} of \textit{Ulugveg\={\i} j\={\i}ka} is written.
+There in the determination of the Sine of one degree there is a newer pair of methods. 
+One is made by [the one] named Yama\'saida K\=a\'s\={\i}; the second is made by
+Miryolugvega. And furthermore of Ulugvega [?], in the procedure of opening [?]
+of Yamasaida K\=a\'s\={\i}, that is to be made [?? \textit{h\=apya}?].
+There the first method is stated. It [?] is as [follows]: Arc $ABJD$ is considered six degrees, 6. Again, equal division of it, this of [?]
+point $B$ [and] point $J$, is made. There $AB$, $AJ$, $AD$, $VJ$ [$V$ and $B$ used
+interchangeably for this point by the scribe], $BD$, and $JD$,
+those lines are to be joined [as] Chords. 
+
+Now here by the previously-stated method the Sine of three degrees is known, and it 
+is this: 3\danda 8\danda 12 4\danda 33\danda 59\danda 34\danda 28\danda 54\danda 50.
+This is multiplied by two: 6\danda 16\danda 49\danda 7\danda 59\danda 8\danda 56
+[\elp illeg.] results, the Chord of $AD$. Here knowledge of the Chord $AB$ of two degrees
+is desired. There in the second figure of the first chapter of the book Mijist\={\i} this
+is explained. Of any quadrilateral that falls in a circle, the
+sum of the products of sides standing opposite 
+becomes equal to the product of the two diagonals falling in that quadrilateral.
+Again just there in the fourth figure of the first chapter, this is explained. The square
+of the Chord of half the desired arc [? the half-Chord of the desired
+arc?] becomes equal with that number. [?] Whatever is the number, whatever becomes
+the Chord of the degrees of half a circle diminished by that arc, whatever is the difference 
+of that with the diameter, whatever is the half-diameter multiplied by that, becomes 
+equal to that number. [?] 
+
+\newpage
+{\s एवमत्र अबचापजदचापे मिथः समाने स्थः|
+एवं अजबदचापे च समाने स्तः ||
+तस्मात् अबजदघातो \footnote{{\s अवजदघातो@}${\rm SB_J}$} वर्गो भविष्यति ||
+अत्र बजमज्ञातं तद्यावत्तावन्मितं कल्पितमिदमदेनगुणितं
+जातं वा ६| १६|४९| ७| ५९| ८| ५६| २९| ४०|
+एवं अबजदघातरूपवर्गराशेर्यावत्तावतश्च \footnote{{\s अवजद@}${\rm SB_J}$} योगः
+अजवर्गतुल्य अनबदथा \footnote{{\s अजबदघा@}${\rm SB_J}$} तेन समानो ष्ति \footnote{{\s @स्ति}${\rm SB_J}$}|
+
+अतो .अयं \footnote{{\s अतोयं}${\rm SB_J}$} अजवर्गतुल्यो जातः ||
+तस्मात् \\
+अजवर्गराशिरेकोवर्गराशिरेभिर्यावत्तावद्भिरधिको
+\footnote{{\s अजवर्गराशी एको@ }${\rm J_1}$}
+\footnote{{\s अजवर्गराशौ एको@}${\rm SB_J}$}
+जातः|
+याव १ या ६| १६| ४९| ७| ५९| ८| ५६| २९| ४०}
+
+
+\newpage
+In this way here arc $AB$ [and] arc $JD$ pairwise become equal. 
+And in this way arcs $AJ,$  $BD$ become equal.
+From that, the product of $AB$, $JD$ will become a square. Here, $BJ$ is not known;
+that is considered the measure of the \ya. This is multiplied by $AD$; and result,
+6\danda 16\danda 49\danda 7\danda 59\danda 8\danda 56\danda 29\danda 40.
+In this way the sum of the \ya\
+and of the amount of the square of the number of the product of $AB$, $JD$
+[is] equal to the square of $AJ$, moreover $AJ$ $BD$, is equal with that. [?]
+
+%  \begin{figure}[h]
+% \includegraphics[width=2in] %% 
+% {JCUFig1bis}
+% \centering
+% \label{JCUFig1bis}
+% \end{figure}
+
+Here this result [is] equal to the square of $AJ$. From that, in the amount of the 
+square of $AJ$ [is] one amount of the square; [?] with these unknowns the result 
+is greater. \yava\ 1 \ya\ 6\danda 16\danda 49\danda 7\danda 59\danda 8\danda
+56\danda 29\danda 40. 
+
+\newpage
+{\s अथ
+प्रकारान्तरेण अजवर्गः\footnote{{\s प्रकारांतरेणाजवर्गः }${\rm J_1}$}
+साध्यते ||
+तत्र अजचापं भार्धांशेभ्यः शोध्यं शेषस्य
+पूर्णज्याया \footnote{{\s पूर्णज्यायाः}${\rm SB_J}$} व्यासस्य चान्तरं कार्यं तेन घ्न षष्टितुल्यव्यासार्धं
+अववर्गतुल्यं भविष्यति ||
+यतः अजचापं अवचापाद्द्विगुणमस्ति ||
+तस्माद्यदि अववर्गो\footnote{{\s अवबर्गः} ${\rm J_1}$}
+याव १ षष्टि ६० तुल्यव्यासार्धेन भाज्यते तदा यावद्वर्गस्य
+षष्ट्यंशो लभ्यते तच्च अजचापानभार्धानां \footnote{{\s अजचोपोन@}${\rm SB_J}$} या पूर्णज्या
+तदूनो यो व्यासस्तस्य प्रमाणमस्ति ||
+पुनरिदमन्तरं संपूर्णव्यासे १२० शोधितं
+याव $\bm{\frac{\dot {1}}{60}}$ रू १२०
+इदं अजचापोनभार्धांशानां पूर्णज्या जाता ||
+अस्या वर्गः %\\(|\\)
+यावव $\bm{\frac{1}{3600}}$ याव $\bm{\frac{\dot{240}}{60}}$
+रू १४४००}
+
+
+\newpage
+Now by another method, the square of $AJ$ is determined. There, arc $AJ$ is to be subtracted
+from the degrees of half a circle; the difference of the Chord of the remainder 
+and of the diameter is to be made. The half-diameter equal to sixty multiplied by that
+will become equal to the square of $AV$. Since arc $AJ$ is doubled from arc $AB$. 
+From that, if the square of $AB$ \yava\ 1 is divided by the half-diameter equal to sixty 60, 
+then a sixtieth part of the \yava\ is obtained; and that of the half-circles [?] diminished by
+arc $AJ$, \ya\ Chord [?], whatever is the diameter diminished by that, is the amount of that [?].
+Again, this difference is subtracted from the full diameter 120:
+\yava\ $-\frac{1}{60}$ [is this dot actually a negative sign?], un.\ 120. This, resulting Chord of the
+degrees of half a circle diminished by arc $AJ$. Its square: 
+\yavava\ $\frac{1}{3600}$, \yava\ $\frac{240}{60}$, un.\ 14400.
+
+\newpage
+{\s अथ च यदीष्ष्तचापपूर्णज्यावर्गो \footnote{{\s यदीष्टचापपूर्णज्यावर्गः}${\rm SB_J}$} व्यासवर्गाच्छोद्यते
+तत्र शेषं
+$|$\marginnote{f. 1v $J_2$} \\
+तच्चापोनभार्धांशपूर्णज्यावर्गो
+भवति ||\footnote{{\s भावति }${\rm J_1}$}
+यतो व्यासेनेष्टचापे \footnote{{\s व्यासेन इ्ष्टचापे}${\rm SB_J}$} पूर्णज्यया इष्टचापोनभार्धांशपूर्णज्यया
+चैकसमकोणत्रि\-भुजं भवति यतो वृत्तार्धे व्यासप्रान्तादुत्पन्नत्रिभुजस्य
+पालिकोणः समकोणो
+भवतीत्युक्लीदसस्य \footnote{OH MY GOD IT'S EUCLID}
+तृतीयाध्याय\footnote{{\s तृतीयाध्याये उप@ }${\rm J_1}$}
+उपपन्न\-मस्ति ||
+तत्त्रिभुजे
+समकोणसन्मुखभुजो व्यासो .अस्ति \footnote{{\s व्यासोस्ति}${\rm SB_J}$}||
+स च कर्णरूपः ||
+पुनः कर्णवर्गो \footnote{{\s कर्णवर्गः}${\rm SB_J}$} भुजकोट्योर्वर्गयोगेन समो
+भवति|\footnote{{\s भवती| }${\rm J_1}$}\footnote{{there is no second भवती}${\rm SB_J}$}
+भवतीत्युक्लीदसस्य
+प्रथमाध्याय\footnote{{\s प्रथमध्याये उप@ }${\rm J_1}$}
+उपपन्नम् ||
+
+अतो .अत्र \footnote{{\s अतोत्र}${\rm SB_J}$} व्यासवर्गः १४४०० कर्णवर्गरूपः ||
+अस्मिनिष्टचापोनभार्धांशानां पूर्णज्यावर्गः
+यावव $\bm{\frac{1}{3600}}$ याव $\bm{\frac{\dot{240}}{60}}$
+रू १४४००
+शोधितः शेषं अजपूर्णज्यावर्गो .अवशिष्टः \footnote{{\s वर्गोवशिष्टः}${\rm SB_J}$} ||
+यावव %\\wहितेस्पचे\\wहितेस्पचे\\wहितेस्पचे
+$\frac{\dot{1}}{3600}$ या $\frac{240}{60}$}
+
+\newpage
+And now, when the square of the Chord of the desired arc is subtracted from the square of the
+diameter, there the remainder \marginnote{f. 1v $J_2$}
+becomes the square of the Chord of the degrees of half a circle diminished by that arc. Since [?] by
+the diameter, the Chord of the desired arc, and the Chord of the degrees of half a circle diminished by
+the desired arc a triangle with one right angle is [formed]; since in half a circle from the \textit{prānta} [??] 
+of the diameter the \textit{pāli-angle} [?] of the occurring triangle is a right angle—thus in the third book of 
+Euclid [\textit{uklīdasa}] [it] is demonstrated. In that triangle the side opposite the right angle is the diameter. And it
+[has] the form [? number?] of a hypotenuse. Again, the square of the hypotenuse is equal to the sum
+of the squares of the arm and upright—thus in the first book of Euclid [it] is demonstrated. Whence
+here the square of the diameter 14400 is the number [? form?] of the square of the hypotenuse. In
+[from?] this, the square of the Chord of the degrees of half a circle \yavava\ $\frac{1}{3600}$
+\yava\ $\frac{240}{60}$ \ru\ 14400 diminished by the desired arc is subtracted. The remainder the square of the 
+Chord AJ: remainder [??], \yavava\ $\frac{-1}{3600}$ \yava\ $\frac{240}{60}$
+
+\newpage
+
+{\s अयं
+द्वितीयप्रकारेण अजवर्गः\footnote{{\s @प्रकारेणा .अजवर्गः }${\rm J_1}$}
+सिद्धः ||
+अस्यप्रथमप्रकारागत अजवर्गः याव १ या ६| १६| ४९| ७| ५९| ८| ५६| २९| ४०
+एतौ समावितिसमशोधनार्थं न्यासः
+%"\nl"
+%\Column{यावव \whitespace\whitespace\upbefore{०}१ \downafter{३६००}}
+%"{८एम्}"
+%\Column{याव \upbefore{२४०}६०}%"{६एम्}"
+%\Column{या ०}%"{३एम्}"
+%"\\न्ल्"
+%\Column{यावव ०}%"{८एम्}"
+%\Column{याव १}%"{६एम्}"
+%\Column{या ६| १६| ४९| ७| ५९| ८| ५६| २९| ४०}%"{१६एम्}"
+
+अथ यावनीयबीजगणिते समीकरणसंप्रदायस्त्वनया रीत्यास्ति
+सा यथा ||
+यदि समयोः पक्षयोर्मध्य एकाराशिरृण\-श्चेत्तद्राशितुल्यं
+\footnote{{\s पक्षयोर्मध्ये एकाराशिः ऋणश्चेत् तद्राशि@ }${\rm J_1}$} \footnote{{\s पक्षयोर्मध्ये एकोराशिः ऋणश्चेत् तद्राशि@}${\rm SB_J}$}
+पक्षद्वये योज्यं\footnote{{\s पक्षद्वयो जोज्यं }${\rm J_1}$}
+तदापि पक्षद्वयं सममेव भवति ||
+तस्मादत्र प्रथमपक्षे यावव %\\whitespace\\wहितेस्पचे\\wहितेस्पचे
+$\frac{\dot{240}}{60}$
+इदं पक्षद्वये योज्यं तत्र प्रथमपक्षे
+धनर्णयोस्तुल्यत्वाद्यावद्वर्गवर्गस्य नाशो .अवशिष्टो \footnote{{\s नाशोः अवशिष्टः}${\rm SB_J}$}
+याव $\frac{240}{60}$
+अयं छेदभक्तो \footnote{{\s छेदभक्तः}${\rm SB_J}$} याव ४\\(|\\) अयं प्रथमपक्षः पुनर्द्वितीयपक्षे
+यावव $\frac{1}{3600}$ योजितः यावव $\frac{1}{3600}$
+याव १ या ६| १६| ४९| ७| ५९| ८| ५६| २९| ४०
+एतौ पक्षौ पुनरपि समौ
+%"\\न्ल्"
+%\Column{याव ४}%"{८एम्}"
+%\Column{या ०}%"{४एम्}"
+%"\\न्ल्"
+%\Column{यावव \upbefore{१}३६००}%"{८एम्}"
+%\Column{याव १ या ६| १६| ४९| ७| ८| ५६| २९| ४०} \footnote{{\s याव १ या ६| १६| ४९| ७| ५९| ८| ५६| २९| ४०}${\rm SB_J}$}%"{२८एम्}"  
+}
+\newpage
+
+This by the second method: The square of AJ [is] determined [?]. Of it the first-method square
+of AJ \yava\ 1 \ya\ 6|16|49|7|59|8|56|29|40. These two [are] equal: thus for the
+purpose of subtraction of equals, the setting-out:
+\yavava\ $\frac{-1}{3600}$ \yava\ $\frac{240}{60}$ \ya\ 0\\
+\yavava\ 0 \yava\ 1 \ya\  6|16|49|7|59|8|56|29|40\\
+
+Now, in western (\yavaniya) algebra (\bijaganita) the balancing (sam.pradaya) of equations is however by this method, as follows: If one quantity (\rasi) among the two equal sides, if negative, then an equal quantity is to be added in the two sides [?]. And then the pair of sides becomes just equal. From
+that, here in the first side \yavava\ $\frac{-1}{3600}$ this is to be added to the second side, there
+because of equality of the positive and negative in the first side [there is] elimination of the \yavava; remainder \yava\ $\frac{240}{60}$. This is divisor-divided: \yava\ 4. This first side again in the second side \yavava\ $\frac{1}{3600}$ is added: \yavava\  $\frac{1}{3600}$
+\yava\ 1 \ya\ 6|16|49|7|59|8|56|29|40. These two sides again are equal:\\
+\yava\ 4 \ya\ 0
+\yavava\  $\frac{1}{3600}$ \ya\ 6|16|49|7|59|8|56|29|40.
+
+\newpage
+{\s अथयावनीयसंप्रदाये समपक्षयोर्मध्ये यौ
+राश्येकजाती \footnote{{\s राशी एकजाती}${\rm SB_J}$} भवतः ||
+तत्र लघुराशिर्महद्राशौ शोध्यते तदापि पक्षौ समावेदावशिष्टौ \footnote{{\s समावेवावशिष्टौ}${\rm SB_J}$}
+भवतः ||
+तस्मादत्र यावर्गराशिरेकजाती \footnote{{\s यावर्गराशिः एकजाती}${\rm SB_J}$} यो .अस्त्यतो \footnote{{\s योस्त्यतो}${\rm SB_J}$} लघुराशिर्याव \footnote{{\s लघुराशिः याव}${\rm SB_J}$} १
+महद्राशौ याव ४ शोधितः शेषं प्रथमपक्षो \footnote{{\s प्रथमपक्षः}${\rm SB_J}$} याव ३
+द्वितीयपक्षे च यावव $\frac{1}{3600}$
+या ६| १६| ४९| ७| ५९| ८| ५६| २९| ४०
+एतावपि समौ ||
+पुनः\footnote{{\s पुन } ${\rm J_1}$}
+पक्षद्वयमध्ये यद्येकोपक्षः खण्डितो \footnote{{\s खण्डितः}${\rm SB_J}$} द्वितीयपक्षः
+संपूर्णश्चेत्तदा खण्डितराशिं प्रपूर्यं
+तावद्गुणितं \footnote{{\s तावद्गुणं}${\rm SB_J}$} द्वितीयपक्षमपि
+कुर्वति ||\footnote{{\s कुर्वंति }${\rm J_1}$}
+अत्र सछेदराशिः खण्डितशब्देनोच्यते|
+छेदरहितः संपूर्णोच्यते ||\footnote{{\s संपूर्ण उच्यते }${\rm J_1}$}
+एवं कृते सति पक्षयोः समछेदत्वं\footnote{{\s पक्षयोसम@ }${\rm J_1}$}
+विधाये छेदाय गम \footnote{{\s विधाय छेदापगम }${\rm J_1}$}
+ एवोपपद्यते ||
+तस्मादत्र द्वितीयप [क्षे \marginnote{f. 2r $J_2$}
+खण्डितराशिर्यावव \footnote{{\s खण्डितराशिः यावव }${\rm J_1}$} $\frac{1}{3600}$}
+
+\newpage
+Now in the western balancing among the two equal sides [there] are [???] two [? du.?] quantities
+of the same type. There the lesser quantity is subtracted from the greater quantity; and then the two
+become just equal remainders. From that, here the \yava\ quantity, two [?] of one kind,
+which[ever] is hence the small quantity,\yava\ 1, from the large quantity, \yava\
+4, [is] subtracted. The remainder [is] the first side,\yava\ 3; and in the second side \yavava\  $\frac{1}{3600}$  \ya\ 6|16|49|7|59|8|56|29|40. 
+And these two are equal. Again, among the two sides if one side broken, if second-side-full [?], then they make [?] the broken quantity filled
+so-much-multiplier [??] second side. [???] Here a quantity with a divisor is stated by the word
+“broken”. Devoid of divisor is called “filled”. When [it] is done thus, having established same-divisorness of the two sides, in the reduction [??] of the divisor [it] is just demonstrated. From that, here in the second side \marginnote{f. 2r $J_2$} 
+the broken quantity is \yavava\ $\frac{1}{3600}$
+
+
+
+
+
+
+
+
+
+\end{document}
